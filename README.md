@@ -1,5 +1,5 @@
 # Skittle_Dispenser
-The repository for my ENGI 301 midterm project.
+The repository for my Candy Dispenser project.
 
 You need to use the Adafruit_BBIO Library for this project.
 
