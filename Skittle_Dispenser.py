@@ -203,7 +203,7 @@ def open_door():
 # end def
 
     
-def play_zelda_secret():
+def zelda_secret():
     """Plays the Uncover Secret song from The Legend of Zelda."""
     play_note(NOTE_G5, 0.15)
     play_note(NOTE_FS5, 0.15)
@@ -218,7 +218,111 @@ def play_zelda_secret():
     
 # end def
 
-def play_zelda_Song_of_Time():
+def zelda_Zelda_Lullaby():
+    """Plays Zelda's Lullaby from The Legend of Zelda."""
+    play_note(NOTE_B4, 1.2)
+    play_note(NOTE_D5, 0.6)
+    play_note(NOTE_A4, 1.8)
+    play_note(NOTE_B4, 1.2)
+    play_note(NOTE_D5, 0.6)
+    play_note(NOTE_A4, 1.8)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Epona_Song():
+    """Plays Epona's Song from The Legend of Zelda."""
+    play_note(NOTE_D5, 0.35)
+    play_note(NOTE_B4, 0.35)
+    play_note(NOTE_A4, 1.4)
+    play_note(NOTE_D5, 0.35)
+    play_note(NOTE_B4, 0.35)
+    play_note(NOTE_A4, 1.4)
+    play_note(NOTE_D5, 0.35)
+    play_note(NOTE_B4, 0.35)
+    play_note(NOTE_A4, 0.7)
+    play_note(NOTE_B4, 0.7)
+    play_note(NOTE_A4, 1.5)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Saria_song():
+    """Plays Saria's Song from The Legend of Zelda."""
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_A4, 0.15)
+    play_note(NOTE_B4, 0.3)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_A4, 0.15)
+    play_note(NOTE_B4, 0.3)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_A4, 0.15)
+    play_note(NOTE_B4, 0.15)
+    play_note(NOTE_E4, 0.15)
+    play_note(NOTE_D5, 0.3)
+    play_note(NOTE_B4, 0.15)
+    play_note(NOTE_C5, 0.15)
+    play_note(NOTE_B4, 0.15)
+    play_note(NOTE_G4, 0.15)
+    play_note(NOTE_E4, 0.6)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+
+# end def
+
+def zelda_Song_of_Storms():
+    """Plays the Song of Storms from The Legend of Zelda."""
+    play_note(NOTE_D4, 0.15)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_D5, 0.6)
+    play_note(NOTE_D4, 0.15)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_D5, 0.6)
+    play_note(NOTE_E5, 0.45)
+    play_note(NOTE_F5, 0.15)
+    play_note(NOTE_E5, 0.15)
+    play_note(NOTE_F5, 0.15)
+    play_note(NOTE_E5, 0.15)
+    play_note(NOTE_C5, 0.15)
+    play_note(NOTE_A4, 0.6)
+    
+# end def
+
+def zelda_Sun_Song():
+    """Plays the Sun's Song from The Legend of Zelda."""
+    play_note(NOTE_A4, 0.15)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_D5, 0.3)
+    PWM.stop(piezo_pin)
+    time.sleep(0.3)
+    play_note(NOTE_A4, 0.15)
+    play_note(NOTE_F4, 0.15)
+    play_note(NOTE_D5, 0.3)
+    PWM.stop(piezo_pin)
+    time.sleep(0.3)
+    play_note(NOTE_G4, 0.1)
+    play_note(NOTE_A4, 0.1)
+    play_note(NOTE_B4, 0.1)
+    play_note(NOTE_C5, 0.1)
+    play_note(NOTE_D5, 0.1)
+    play_note(NOTE_E5, 0.1)
+    play_note(NOTE_F5, 0.1)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    play_note(NOTE_G5, 0.125)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Song_of_Time():
     """Plays the Song of Time from The Legend of Zelda."""
     play_note(NOTE_A4, 0.5)
     play_note(NOTE_D4, 1.0)
@@ -242,27 +346,84 @@ def play_zelda_Song_of_Time():
     
 # end def
 
-def play_zelda_Saria_song():
-    """Plays Saria's Song from The Legend of Zelda."""
-    play_note(NOTE_F4, 0.15)
-    play_note(NOTE_A4, 0.15)
-    play_note(NOTE_B4, 0.3)
-    play_note(NOTE_F4, 0.15)
-    play_note(NOTE_A4, 0.15)
-    play_note(NOTE_B4, 0.3)
-    play_note(NOTE_F4, 0.15)
-    play_note(NOTE_A4, 0.15)
-    play_note(NOTE_B4, 0.15)
-    play_note(NOTE_E4, 0.15)
-    play_note(NOTE_D5, 0.3)
-    play_note(NOTE_B4, 0.15)
-    play_note(NOTE_C5, 0.15)
-    play_note(NOTE_B4, 0.15)
-    play_note(NOTE_G4, 0.15)
-    play_note(NOTE_E4, 0.6)
+def zelda_Minuet_of_Forest():
+    """Plays the Minuet of Forest from The Legend of Zelda."""
+    play_note(NOTE_D5, 0.225)
+    play_note(NOTE_D6, 0.225)
+    play_note(NOTE_B5, 0.9)
+    play_note(NOTE_A5, 0.225)
+    play_note(NOTE_B5, 0.225)
+    play_note(NOTE_A5, 0.9)
     PWM.stop(piezo_pin)
     PWM.cleanup()
+    
+# end def
 
+def zelda_Bolero_of_Fire():
+    """Plays the Bolero of Fire from The Legend of Zelda."""
+    play_note(NOTE_F4, 0.225)
+    play_note(NOTE_D4, 0.225)
+    play_note(NOTE_F4, 0.225)
+    play_note(NOTE_D4, 0.225)
+    play_note(NOTE_A4, 0.225)
+    play_note(NOTE_F4, 0.225)
+    play_note(NOTE_A4, 0.225)
+    play_note(NOTE_F4, 0.9375)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Serenade_of_Water():
+    """Plays the Serenade of Water from The Legend of Zelda."""
+    play_note(NOTE_D5, 0.5)
+    play_note(NOTE_F5, 0.5)
+    play_note(NOTE_A5, 0.5)
+    play_note(NOTE_A5, 0.5)
+    play_note(NOTE_B5, 1.0)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Requiem_of_Spirit():
+    """Plays the Requiem of Spirit from The Legend of Zelda."""
+    play_note(NOTE_D5, 0.75)
+    play_note(NOTE_F5, 0.375)
+    play_note(NOTE_D5, 0.375)
+    play_note(NOTE_A5, 0.75)
+    play_note(NOTE_F5, 0.75)
+    play_note(NOTE_D5, 1.5)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Nocturne_of_Shadow():
+    """Plays the Nocturne of Shadow from The Legend of Zelda."""
+    play_note(NOTE_B4, 0.67)
+    play_note(NOTE_A4, 0.67)
+    play_note(NOTE_A4, 0.33)
+    play_note(NOTE_D4, 0.33)
+    play_note(NOTE_B4, 0.33)
+    play_note(NOTE_A4, 0.33)
+    play_note(NOTE_F4, 1.5)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
+# end def
+
+def zelda_Preulde_of_Light():
+    """Plays the Prelude of Light from The Legend of Zelda."""
+    play_note(NOTE_D5, 0.25)
+    play_note(NOTE_A4, 0.75)
+    play_note(NOTE_D5, 0.25)
+    play_note(NOTE_A4, 0.25)
+    play_note(NOTE_B4, 0.25)
+    play_note(NOTE_D5, 1.25)
+    PWM.stop(piezo_pin)
+    PWM.cleanup()
+    
 # end def
 
 
@@ -273,17 +434,37 @@ def play_zelda_Saria_song():
 if __name__ == '__main__':
     setup()
     
+    zelda_secret()
+    
     while True:
         fill_percent = int(math.floor(ADC.read("AIN5") * 200))
         HT16K33.update_display(fill_percent)
         if GPIO.input("P2_2") == 0:
-            song_number = random.randint(1, 3)
+            song_number = random.randint(1, 12)
             if song_number == 1:
-                play_zelda_secret()
+                zelda_Zelda_Lullaby()
             elif song_number == 2:
-                play_zelda_Song_of_Time()
+                zelda_Epona_Song()
             elif song_number == 3:
-                play_zelda_Saria_song()
+                zelda_Saria_song()
+            elif song_number == 4:
+                zelda_Song_of_Storms()
+            elif song_number == 5:
+                zelda_Sun_Song()
+            elif song_number == 6:
+                zelda_Song_of_Time()
+            elif song_number == 7:
+                zelda_Minuet_of_Forest()
+            elif song_number == 8:
+                zelda_Bolero_of_Fire()
+            elif song_number == 9:
+                zelda_Serenade_of_Water()
+            elif song_number == 10:
+                zelda_Requiem_of_Spirit()
+            elif song_number == 11:
+                zelda_Nocturne_of_Shadow()
+            elif song_number == 12:
+                zelda_Preulde_of_Light()
             else:
                 pass
             open_door()
